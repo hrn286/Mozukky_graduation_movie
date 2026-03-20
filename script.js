@@ -15,3 +15,8 @@ function playVideo() {
   frame.src = "https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID?autoplay=1";
   videoArea.classList.remove("hidden");
 }
+
+function notReady() {
+  const hint = document.getElementById("hint");
+  hint.classList.remove("hidden");
+}
