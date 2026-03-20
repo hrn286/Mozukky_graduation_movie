@@ -91,6 +91,29 @@ h1 {
   display: none;
 }
 
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sub-button {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 999px;
+  border: 2px solid #ff8fb1;
+  background: white;
+  color: #ff6f91;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
 /* 少し大きいスマホ〜タブレット向け */
 @media (min-width: 768px) {
   .card {
