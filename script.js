@@ -18,7 +18,7 @@ function goStep5() {
   document.getElementById("step5").classList.remove("hidden");
 }
 
-function goStep5-1() {
+function goStep6() {
   document.getElementById("step3").classList.add("hidden");
   document.getElementById("step5").classList.remove("hidden");
 }
