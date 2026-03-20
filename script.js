@@ -28,6 +28,11 @@ function goStep7() {
   document.getElementById("step6").classList.remove("hidden");
 }
 
+function goStep8() {
+  document.getElementById("step6").classList.add("hidden");
+  document.getElementById("step3").classList.remove("hidden");
+}
+
 function playVideo() {
   const videoArea = document.getElementById("videoArea");
   const frame = document.getElementById("youtubeFrame");
