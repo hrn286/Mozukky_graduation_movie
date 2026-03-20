@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>先輩へ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <div id="step1">
+      <h1>先輩へ</h1>
+      <p>
+        ご卒業おめでとうございます。<br>
+        たくさんの思い出と感謝をこめて、ささやかなプレゼントを用意しました。
+      </p>
+      <button onclick="goStep2()">思い出を見る</button>
+    </div>
 
+    <div id="step2" class="hidden">
+      <h1>まだ準備はいいですか？</h1>
+      <p>心の準備ができたら、次へ進んでください。</p>
+      <button onclick="goStep3()">はい、準備できました</button>
+    </div>
+
+    <div id="step3" class="hidden">
+      <h1>再生する</h1>
+      <p>それでは、どうぞご覧ください。</p>
+      <button onclick="playVideo()">再生する</button>
+
+      <div id="videoArea" class="hidden video-wrap">
+        <iframe
+          id="youtubeFrame"
+          src=""
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
