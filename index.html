@@ -7,37 +7,49 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <div id="step1">
+  <main class="container">
+    <section class="card" id="step1">
+      <p class="sub">Graduation Surprise</p>
       <h1>先輩へ</h1>
-      <p>
-        ご卒業おめでとうございます。<br>
-        たくさんの思い出と感謝をこめて、ささやかなプレゼントを用意しました。
+      <p class="message">
+        ご卒業おめでとうございます。<br />
+        感謝の気持ちをこめて、<br />
+        ささやかなプレゼントを用意しました。
       </p>
-      <button onclick="goStep2()">思い出を見る</button>
-    </div>
+      <button class="main-button" onclick="goStep2()">思い出を見る</button>
+    </section>
 
-    <div id="step2" class="hidden">
+    <section class="card hidden" id="step2">
+      <p class="sub">Ready?</p>
       <h1>まだ準備はいいですか？</h1>
-      <p>心の準備ができたら、次へ進んでください。</p>
-      <button onclick="goStep3()">はい、準備できました</button>
-    </div>
+      <p class="message">
+        心の準備ができたら、<br />
+        次へ進んでください。
+      </p>
+      <button class="main-button" onclick="goStep3()">はい、準備できました</button>
+    </section>
 
-    <div id="step3" class="hidden">
+    <section class="card hidden" id="step3">
+      <p class="sub">Special Movie</p>
       <h1>再生する</h1>
-      <p>それでは、どうぞご覧ください。</p>
-      <button onclick="playVideo()">再生する</button>
+      <p class="message">
+        それでは、どうぞご覧ください。
+      </p>
+      <button class="main-button" onclick="playVideo()">再生する</button>
 
-      <div id="videoArea" class="hidden video-wrap">
-        <iframe
-          id="youtubeFrame"
-          src=""
-          allow="autoplay; encrypted-media"
-          allowfullscreen>
-        </iframe>
+      <div id="videoArea" class="video-section hidden">
+        <div class="video-wrap">
+          <iframe
+            id="youtubeFrame"
+            src=""
+            title="卒業サプライズ動画"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
