@@ -13,6 +13,11 @@ function goStep4() {
   document.getElementById("step4").classList.remove("hidden");
 }
 
+function goStep5() {
+  document.getElementById("step4").classList.add("hidden");
+  document.getElementById("step5").classList.remove("hidden");
+}
+
 function playVideo() {
   const videoArea = document.getElementById("videoArea");
   const frame = document.getElementById("youtubeFrame");
