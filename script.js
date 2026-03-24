@@ -37,7 +37,7 @@ function playVideo() {
   const videoArea = document.getElementById("videoArea");
   const frame = document.getElementById("youtubeFrame");
 
-  frame.src = "https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID?autoplay=1";
+  frame.src = "https://www.youtube.com/embed/xW0aR9Uo5-4?autoplay=1";
   videoArea.classList.remove("hidden");
 }
 
